@@ -139,6 +139,22 @@ class MessageTabAdapter @Inject constructor() : RecyclerView.Adapter<RecyclerVie
             }
             messageItemUnreadIndicator.isVisible = message.unread || item.isMuted
 
+            with(messageItemReadUnreadIcon){
+                // Check if the message was received
+                if (message.unreadBy != null && message.readBy != null){
+                    isVisible = true
+                    ImageViewCompat.setImageTintList(this, ColorStateList.valueOf(currentTextColor))
+
+                    val imageResource = when {
+                        message.unreadBy == 0 -> R.drawable.ic_read
+                        message.readBy > 0 -> R.drawable.ic_read_partial
+                        else -> R.drawable.ic_unread
+                    }
+
+                    setImageResource(imageResource)
+                } else isVisible = false
+            }
+
             when (item.isMuted) {
                 true -> messageItemUnreadIndicator.setImageResource(R.drawable.ic_notifications_off)
                 else -> messageItemUnreadIndicator.setImageResource(R.drawable.ic_circle_notification)
