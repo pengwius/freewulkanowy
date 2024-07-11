@@ -15,9 +15,9 @@ import io.github.freewulkanowy.R
 import io.github.freewulkanowy.data.repositories.PreferencesRepository
 import io.github.freewulkanowy.data.repositories.SemesterRepository
 import io.github.freewulkanowy.data.repositories.StudentRepository
-import io.github.wulkanowy.sdk.exception.FeatureNotAvailableException
-import io.github.wulkanowy.sdk.scrapper.exception.FeatureDisabledException
-import io.github.wulkanowy.sdk.scrapper.exception.FeatureUnavailableException
+import io.github.freewulkanowy.sdk.exception.FeatureNotAvailableException
+import io.github.freewulkanowy.sdk.scrapper.exception.FeatureDisabledException
+import io.github.freewulkanowy.sdk.scrapper.exception.FeatureUnavailableException
 import io.github.freewulkanowy.services.sync.channels.DebugChannel
 import io.github.freewulkanowy.services.sync.works.Work
 import io.github.freewulkanowy.utils.DispatchersProvider

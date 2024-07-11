@@ -8,7 +8,7 @@ import io.github.freewulkanowy.data.db.entities.Semester
 import io.github.freewulkanowy.data.db.entities.Student
 import io.github.freewulkanowy.data.mappers.mapToEntities
 import io.github.freewulkanowy.data.networkBoundResource
-import io.github.wulkanowy.sdk.pojo.Absent
+import io.github.freewulkanowy.sdk.pojo.Absent
 import io.github.freewulkanowy.utils.AutoRefreshHelper
 import io.github.freewulkanowy.utils.getRefreshKey
 import io.github.freewulkanowy.utils.monday

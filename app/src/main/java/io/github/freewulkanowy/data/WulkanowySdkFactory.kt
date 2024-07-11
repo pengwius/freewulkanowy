@@ -11,8 +11,8 @@ import io.github.freewulkanowy.data.db.entities.Semester
 import io.github.freewulkanowy.data.db.entities.Student
 import io.github.freewulkanowy.data.db.entities.StudentIsEduOne
 import io.github.freewulkanowy.data.repositories.WulkanowyRepository
-import io.github.wulkanowy.sdk.Sdk
-import io.github.wulkanowy.sdk.scrapper.EvaluateHandler
+import io.github.freewulkanowy.sdk.Sdk
+import io.github.freewulkanowy.sdk.scrapper.EvaluateHandler
 import io.github.freewulkanowy.utils.RemoteConfigHelper
 import io.github.freewulkanowy.utils.WebkitCookieManagerProxy
 import kotlinx.coroutines.guava.await
@@ -103,16 +103,17 @@ class WulkanowySdkFactory @Inject constructor(
             emptyCookieJarInterceptor = true
             isEduOne = isStudentEduOne
 
-            if (Sdk.Mode.valueOf(student.loginMode) == Sdk.Mode.HEBE) {
-                mobileBaseUrl = student.mobileBaseUrl
-            } else {
-                scrapperBaseUrl = student.scrapperBaseUrl
-                domainSuffix = student.scrapperDomainSuffix
-                loginType = Sdk.ScrapperLoginType.valueOf(student.loginType)
-            }
+//            if (Sdk.Mode.valueOf(student.loginMode) == Sdk.Mode.HEBE) {
+//                mobileBaseUrl = student.mobileBaseUrl
+//            } else {
+            scrapperBaseUrl = student.scrapperBaseUrl
+            domainSuffix = student.scrapperDomainSuffix
+            loginType = Sdk.ScrapperLoginType.valueOf(student.loginType)
+//            }
 
-            mode = Sdk.Mode.valueOf(student.loginMode)
+//            mode = Sdk.Mode.valueOf(student.loginMode)
 //            mode = Sdk.Mode.HYBRID
+            mode = Sdk.Mode.SCRAPPER
             mobileBaseUrl = student.mobileBaseUrl
             keyId = student.certificateKey
             privatePem = student.privateKey

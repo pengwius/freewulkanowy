@@ -17,8 +17,8 @@ import io.github.freewulkanowy.data.toFirstResult
 import io.github.freewulkanowy.domain.messages.GetMailboxByStudentUseCase
 import io.github.freewulkanowy.getMailboxEntity
 import io.github.freewulkanowy.getStudentEntity
-import io.github.wulkanowy.sdk.Sdk
-import io.github.wulkanowy.sdk.pojo.Folder
+import io.github.freewulkanowy.sdk.Sdk
+import io.github.freewulkanowy.sdk.pojo.Folder
 import io.github.freewulkanowy.utils.AutoRefreshHelper
 import io.github.freewulkanowy.utils.Status
 import io.github.freewulkanowy.utils.status
@@ -253,7 +253,7 @@ class MessageRepositoryTest {
         this.content = content
     }
 
-    private fun getMessageDto() = io.github.wulkanowy.sdk.pojo.Message(
+    private fun getMessageDto() = io.github.freewulkanowy.sdk.pojo.Message(
         globalKey = "v4",
         mailbox = "",
         correspondents = "",

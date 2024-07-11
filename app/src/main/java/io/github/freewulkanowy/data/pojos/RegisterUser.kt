@@ -1,8 +1,8 @@
 package io.github.freewulkanowy.data.pojos
 
 import io.github.freewulkanowy.data.db.entities.Semester
-import io.github.wulkanowy.sdk.Sdk
-import io.github.wulkanowy.sdk.scrapper.Scrapper
+import io.github.freewulkanowy.sdk.Sdk
+import io.github.freewulkanowy.sdk.scrapper.Scrapper
 
 data class RegisterUser(
     val email: String,

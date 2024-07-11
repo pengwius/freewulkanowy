@@ -8,7 +8,7 @@ import io.github.freewulkanowy.data.mappers.mapToEntities
 import io.github.freewulkanowy.data.toFirstResult
 import io.github.freewulkanowy.getSemesterEntity
 import io.github.freewulkanowy.getStudentEntity
-import io.github.wulkanowy.sdk.Sdk
+import io.github.freewulkanowy.sdk.Sdk
 import io.github.freewulkanowy.utils.AutoRefreshHelper
 import io.mockk.MockKAnnotations
 import io.mockk.Runs
@@ -25,7 +25,7 @@ import org.junit.Assert.assertEquals
 import org.junit.Before
 import org.junit.Test
 import java.time.LocalDate
-import io.github.wulkanowy.sdk.pojo.Exam as SdkExam
+import io.github.freewulkanowy.sdk.pojo.Exam as SdkExam
 
 class ExamRemoteTest {
 

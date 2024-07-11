@@ -1,7 +1,7 @@
 package io.github.freewulkanowy.ui.modules.debug.notification.mock
 
 import io.github.freewulkanowy.data.db.entities.Note
-import io.github.wulkanowy.sdk.scrapper.notes.NoteCategory
+import io.github.freewulkanowy.sdk.scrapper.notes.NoteCategory
 import java.time.LocalDate
 
 val debugNoteItems = listOf(

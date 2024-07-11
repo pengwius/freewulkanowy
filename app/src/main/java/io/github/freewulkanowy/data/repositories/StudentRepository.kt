@@ -15,7 +15,7 @@ import io.github.freewulkanowy.data.exceptions.NoCurrentStudentException
 import io.github.freewulkanowy.data.mappers.mapToEntities
 import io.github.freewulkanowy.data.mappers.mapToPojo
 import io.github.freewulkanowy.data.pojos.RegisterUser
-import io.github.wulkanowy.sdk.Sdk
+import io.github.freewulkanowy.sdk.Sdk
 import io.github.freewulkanowy.utils.DispatchersProvider
 import io.github.freewulkanowy.utils.security.Scrambler
 import kotlinx.coroutines.withContext

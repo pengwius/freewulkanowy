@@ -4,8 +4,8 @@ import io.github.freewulkanowy.R
 import io.github.freewulkanowy.data.db.entities.Grade
 import io.github.freewulkanowy.data.db.entities.GradeSummary
 import io.github.freewulkanowy.data.enums.GradeColorTheme
-import io.github.wulkanowy.sdk.scrapper.grades.getGradeValueWithModifier
-import io.github.wulkanowy.sdk.scrapper.grades.isGradeValid
+import io.github.freewulkanowy.sdk.scrapper.grades.getGradeValueWithModifier
+import io.github.freewulkanowy.sdk.scrapper.grades.isGradeValid
 
 fun List<Grade>.calcAverage(isOptionalArithmeticAverage: Boolean): Double {
     val isArithmeticAverage = isOptionalArithmeticAverage && !any { it.weightValue != .0 }

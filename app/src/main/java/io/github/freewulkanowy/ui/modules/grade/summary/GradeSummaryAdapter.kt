@@ -10,7 +10,7 @@ import io.github.freewulkanowy.R
 import io.github.freewulkanowy.data.repositories.PreferencesRepository
 import io.github.freewulkanowy.databinding.ItemGradeSummaryBinding
 import io.github.freewulkanowy.databinding.ScrollableHeaderGradeSummaryBinding
-import io.github.wulkanowy.sdk.scrapper.grades.isGradeValid
+import io.github.freewulkanowy.sdk.scrapper.grades.isGradeValid
 import io.github.freewulkanowy.utils.calcFinalAverage
 import io.github.freewulkanowy.utils.ifNullOrBlank
 import java.util.Locale

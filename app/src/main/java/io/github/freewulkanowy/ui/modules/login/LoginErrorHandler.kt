@@ -4,15 +4,15 @@ import android.content.Context
 import android.database.sqlite.SQLiteConstraintException
 import dagger.hilt.android.qualifiers.ApplicationContext
 import io.github.freewulkanowy.R
-import io.github.wulkanowy.sdk.hebe.exception.InvalidPinException
-import io.github.wulkanowy.sdk.hebe.exception.InvalidTokenException
-import io.github.wulkanowy.sdk.hebe.exception.TokenDeadException
-import io.github.wulkanowy.sdk.hebe.exception.UnknownTokenException
-import io.github.wulkanowy.sdk.scrapper.login.BadCredentialsException
+import io.github.freewulkanowy.sdk.hebe.exception.InvalidPinException
+import io.github.freewulkanowy.sdk.hebe.exception.InvalidTokenException
+import io.github.freewulkanowy.sdk.hebe.exception.TokenDeadException
+import io.github.freewulkanowy.sdk.hebe.exception.UnknownTokenException
+import io.github.freewulkanowy.sdk.scrapper.login.BadCredentialsException
 import io.github.freewulkanowy.ui.base.ErrorHandler
 import javax.inject.Inject
-import io.github.wulkanowy.sdk.hebe.exception.InvalidSymbolException as InvalidHebeSymbolException
-import io.github.wulkanowy.sdk.scrapper.login.InvalidSymbolException as InvalidScrapperSymbolException
+import io.github.freewulkanowy.sdk.hebe.exception.InvalidSymbolException as InvalidHebeSymbolException
+import io.github.freewulkanowy.sdk.scrapper.login.InvalidSymbolException as InvalidScrapperSymbolException
 
 class LoginErrorHandler @Inject constructor(
     @ApplicationContext context: Context,

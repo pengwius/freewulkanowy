@@ -5,7 +5,7 @@ import io.github.freewulkanowy.data.db.dao.SemesterDao
 import io.github.freewulkanowy.data.db.entities.Semester
 import io.github.freewulkanowy.data.db.entities.Student
 import io.github.freewulkanowy.data.mappers.mapToEntities
-import io.github.wulkanowy.sdk.Sdk
+import io.github.freewulkanowy.sdk.Sdk
 import io.github.freewulkanowy.utils.DispatchersProvider
 import io.github.freewulkanowy.utils.getCurrentOrLast
 import io.github.freewulkanowy.utils.isCurrent

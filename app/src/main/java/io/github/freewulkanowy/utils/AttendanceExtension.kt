@@ -3,7 +3,7 @@ package io.github.freewulkanowy.utils
 import io.github.freewulkanowy.R
 import io.github.freewulkanowy.data.db.entities.Attendance
 import io.github.freewulkanowy.data.db.entities.AttendanceSummary
-import io.github.wulkanowy.sdk.scrapper.attendance.AttendanceCategory
+import io.github.freewulkanowy.sdk.scrapper.attendance.AttendanceCategory
 
 /**
  * [UONET+ - Zasady tworzenia podsumowań liczb uczniów obecnych i nieobecnych w tabeli frekwencji]

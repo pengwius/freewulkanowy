@@ -4,10 +4,10 @@ import io.github.freewulkanowy.data.db.entities.Mailbox
 import io.github.freewulkanowy.data.db.entities.MailboxType
 import io.github.freewulkanowy.data.db.entities.Semester
 import io.github.freewulkanowy.data.db.entities.Student
-import io.github.wulkanowy.sdk.Sdk
+import io.github.freewulkanowy.sdk.Sdk
 import java.time.Instant.now
 import java.time.LocalDate
-import io.github.wulkanowy.sdk.pojo.Semester as SdkSemester
+import io.github.freewulkanowy.sdk.pojo.Semester as SdkSemester
 
 fun getSemesterEntity(diaryId: Int = 1, semesterId: Int = 1, start: LocalDate = LocalDate.now(), end: LocalDate = LocalDate.now(), semesterName: Int = 1) = Semester(
     studentId = 1,

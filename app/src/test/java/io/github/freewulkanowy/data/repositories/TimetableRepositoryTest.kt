@@ -10,7 +10,7 @@ import io.github.freewulkanowy.data.mappers.mapToEntities
 import io.github.freewulkanowy.data.toFirstResult
 import io.github.freewulkanowy.getSemesterEntity
 import io.github.freewulkanowy.getStudentEntity
-import io.github.wulkanowy.sdk.Sdk
+import io.github.freewulkanowy.sdk.Sdk
 import io.github.freewulkanowy.services.alarm.TimetableNotificationSchedulerHelper
 import io.github.freewulkanowy.utils.AppWidgetUpdater
 import io.github.freewulkanowy.utils.AutoRefreshHelper
@@ -32,7 +32,7 @@ import java.time.LocalDate
 import java.time.LocalDateTime
 import java.time.LocalDateTime.of
 import java.time.ZoneId
-import io.github.wulkanowy.sdk.pojo.Lesson as SdkLesson
+import io.github.freewulkanowy.sdk.pojo.Lesson as SdkLesson
 
 class TimetableRepositoryTest {
 

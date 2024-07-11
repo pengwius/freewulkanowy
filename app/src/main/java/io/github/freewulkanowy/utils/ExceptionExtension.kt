@@ -2,16 +2,16 @@ package io.github.freewulkanowy.utils
 
 import android.content.res.Resources
 import io.github.freewulkanowy.R
-import io.github.wulkanowy.sdk.exception.FeatureNotAvailableException
-import io.github.wulkanowy.sdk.scrapper.exception.AccountInactiveException
-import io.github.wulkanowy.sdk.scrapper.exception.CloudflareVerificationException
-import io.github.wulkanowy.sdk.scrapper.exception.FeatureDisabledException
-import io.github.wulkanowy.sdk.scrapper.exception.ScrapperException
-import io.github.wulkanowy.sdk.scrapper.exception.ServiceUnavailableException
-import io.github.wulkanowy.sdk.scrapper.exception.VulcanException
-import io.github.wulkanowy.sdk.scrapper.login.BadCredentialsException
-import io.github.wulkanowy.sdk.scrapper.login.NotLoggedInException
-import io.github.wulkanowy.sdk.scrapper.login.PasswordChangeRequiredException
+import io.github.freewulkanowy.sdk.exception.FeatureNotAvailableException
+import io.github.freewulkanowy.sdk.scrapper.exception.AccountInactiveException
+import io.github.freewulkanowy.sdk.scrapper.exception.CloudflareVerificationException
+import io.github.freewulkanowy.sdk.scrapper.exception.FeatureDisabledException
+import io.github.freewulkanowy.sdk.scrapper.exception.ScrapperException
+import io.github.freewulkanowy.sdk.scrapper.exception.ServiceUnavailableException
+import io.github.freewulkanowy.sdk.scrapper.exception.VulcanException
+import io.github.freewulkanowy.sdk.scrapper.login.BadCredentialsException
+import io.github.freewulkanowy.sdk.scrapper.login.NotLoggedInException
+import io.github.freewulkanowy.sdk.scrapper.login.PasswordChangeRequiredException
 import okhttp3.internal.http2.StreamResetException
 import java.io.InterruptedIOException
 import java.net.ConnectException

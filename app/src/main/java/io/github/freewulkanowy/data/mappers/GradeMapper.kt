@@ -4,9 +4,9 @@ import io.github.freewulkanowy.data.db.entities.Grade
 import io.github.freewulkanowy.data.db.entities.GradeDescriptive
 import io.github.freewulkanowy.data.db.entities.GradeSummary
 import io.github.freewulkanowy.data.db.entities.Semester
-import io.github.wulkanowy.sdk.pojo.Grade as SdkGrade
-import io.github.wulkanowy.sdk.pojo.GradeDescriptive as SdkGradeDescriptive
-import io.github.wulkanowy.sdk.pojo.GradeSummary as SdkGradeSummary
+import io.github.freewulkanowy.sdk.pojo.Grade as SdkGrade
+import io.github.freewulkanowy.sdk.pojo.GradeDescriptive as SdkGradeDescriptive
+import io.github.freewulkanowy.sdk.pojo.GradeSummary as SdkGradeSummary
 
 fun List<SdkGrade>.mapToEntities(semester: Semester) = map {
     Grade(

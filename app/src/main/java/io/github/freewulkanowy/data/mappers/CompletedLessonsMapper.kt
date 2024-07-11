@@ -2,7 +2,7 @@ package io.github.freewulkanowy.data.mappers
 
 import io.github.freewulkanowy.data.db.entities.CompletedLesson
 import io.github.freewulkanowy.data.db.entities.Semester
-import io.github.wulkanowy.sdk.pojo.CompletedLesson as SdkCompletedLesson
+import io.github.freewulkanowy.sdk.pojo.CompletedLesson as SdkCompletedLesson
 
 fun List<SdkCompletedLesson>.mapToEntities(semester: Semester) = map {
     CompletedLesson(

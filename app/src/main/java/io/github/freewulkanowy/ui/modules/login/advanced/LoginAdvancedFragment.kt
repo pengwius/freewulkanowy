@@ -11,7 +11,7 @@ import dagger.hilt.android.AndroidEntryPoint
 import io.github.freewulkanowy.R
 import io.github.freewulkanowy.data.pojos.RegisterUser
 import io.github.freewulkanowy.databinding.FragmentLoginAdvancedBinding
-import io.github.wulkanowy.sdk.Sdk
+import io.github.freewulkanowy.sdk.Sdk
 import io.github.freewulkanowy.ui.base.BaseFragment
 import io.github.freewulkanowy.ui.modules.login.LoginActivity
 import io.github.freewulkanowy.ui.modules.login.LoginData

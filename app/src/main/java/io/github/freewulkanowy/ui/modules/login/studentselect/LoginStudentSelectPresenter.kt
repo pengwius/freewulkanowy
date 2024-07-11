@@ -19,8 +19,8 @@ import io.github.freewulkanowy.data.repositories.SchoolsRepository
 import io.github.freewulkanowy.data.repositories.StudentRepository
 import io.github.freewulkanowy.data.resourceFlow
 import io.github.freewulkanowy.domain.adminmessage.GetAppropriateAdminMessageUseCase
-import io.github.wulkanowy.sdk.scrapper.exception.StudentGraduateException
-import io.github.wulkanowy.sdk.scrapper.login.InvalidSymbolException
+import io.github.freewulkanowy.sdk.scrapper.exception.StudentGraduateException
+import io.github.freewulkanowy.sdk.scrapper.login.InvalidSymbolException
 import io.github.freewulkanowy.services.sync.SyncManager
 import io.github.freewulkanowy.ui.base.BasePresenter
 import io.github.freewulkanowy.ui.modules.login.LoginData

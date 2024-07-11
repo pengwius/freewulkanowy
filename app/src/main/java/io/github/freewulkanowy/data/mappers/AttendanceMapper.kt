@@ -4,8 +4,8 @@ import io.github.freewulkanowy.data.db.entities.Attendance
 import io.github.freewulkanowy.data.db.entities.AttendanceSummary
 import io.github.freewulkanowy.data.db.entities.Semester
 import io.github.freewulkanowy.data.db.entities.Timetable
-import io.github.wulkanowy.sdk.pojo.Attendance as SdkAttendance
-import io.github.wulkanowy.sdk.pojo.AttendanceSummary as SdkAttendanceSummary
+import io.github.freewulkanowy.sdk.pojo.Attendance as SdkAttendance
+import io.github.freewulkanowy.sdk.pojo.AttendanceSummary as SdkAttendanceSummary
 
 fun List<SdkAttendance>.mapToEntities(semester: Semester, lessons: List<Timetable>) = map {
     Attendance(

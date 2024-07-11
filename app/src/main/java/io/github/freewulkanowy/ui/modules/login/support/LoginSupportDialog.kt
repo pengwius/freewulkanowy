@@ -11,8 +11,8 @@ import dagger.hilt.android.AndroidEntryPoint
 import io.github.freewulkanowy.R
 import io.github.freewulkanowy.data.repositories.PreferencesRepository
 import io.github.freewulkanowy.databinding.DialogLoginSupportBinding
-import io.github.wulkanowy.sdk.scrapper.login.AccountPermissionException
-import io.github.wulkanowy.sdk.scrapper.login.InvalidSymbolException
+import io.github.freewulkanowy.sdk.scrapper.login.AccountPermissionException
+import io.github.freewulkanowy.sdk.scrapper.login.InvalidSymbolException
 import io.github.freewulkanowy.ui.base.BaseDialogFragment
 import io.github.freewulkanowy.utils.AppInfo
 import io.github.freewulkanowy.utils.openEmailClient

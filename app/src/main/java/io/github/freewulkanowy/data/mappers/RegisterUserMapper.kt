@@ -4,8 +4,8 @@ import io.github.freewulkanowy.data.db.entities.Student
 import io.github.freewulkanowy.data.db.entities.StudentWithSemesters
 import io.github.freewulkanowy.data.pojos.*
 import java.time.Instant
-import io.github.wulkanowy.sdk.pojo.RegisterStudent as SdkRegisterStudent
-import io.github.wulkanowy.sdk.pojo.RegisterUser as SdkRegisterUser
+import io.github.freewulkanowy.sdk.pojo.RegisterStudent as SdkRegisterStudent
+import io.github.freewulkanowy.sdk.pojo.RegisterUser as SdkRegisterUser
 
 fun SdkRegisterUser.mapToPojo(password: String?) = RegisterUser(
     email = email,

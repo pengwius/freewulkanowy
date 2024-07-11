@@ -6,8 +6,8 @@ import io.github.freewulkanowy.data.db.dao.StudentDao
 import io.github.freewulkanowy.data.db.entities.Student
 import io.github.freewulkanowy.data.db.entities.StudentIsEduOne
 import io.github.freewulkanowy.getStudentEntity
-import io.github.wulkanowy.sdk.Sdk
-import io.github.wulkanowy.sdk.pojo.RegisterStudent
+import io.github.freewulkanowy.sdk.Sdk
+import io.github.freewulkanowy.sdk.pojo.RegisterStudent
 import io.mockk.Runs
 import io.mockk.coEvery
 import io.mockk.coVerify

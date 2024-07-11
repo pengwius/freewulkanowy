@@ -5,10 +5,10 @@ import io.github.freewulkanowy.data.db.entities.Timetable
 import io.github.freewulkanowy.data.db.entities.TimetableAdditional
 import io.github.freewulkanowy.data.db.entities.TimetableHeader
 import io.github.freewulkanowy.data.pojos.TimetableFull
-import io.github.wulkanowy.sdk.pojo.Timetable as SdkTimetableFull
-import io.github.wulkanowy.sdk.pojo.TimetableDayHeader as SdkTimetableHeader
-import io.github.wulkanowy.sdk.pojo.Lesson as SdkLesson
-import io.github.wulkanowy.sdk.pojo.LessonAdditional as SdkTimetableAdditional
+import io.github.freewulkanowy.sdk.pojo.Timetable as SdkTimetableFull
+import io.github.freewulkanowy.sdk.pojo.TimetableDayHeader as SdkTimetableHeader
+import io.github.freewulkanowy.sdk.pojo.Lesson as SdkLesson
+import io.github.freewulkanowy.sdk.pojo.LessonAdditional as SdkTimetableAdditional
 
 fun SdkTimetableFull.mapToEntities(semester: Semester) = TimetableFull(
     lessons = lessons.mapToEntities(semester),

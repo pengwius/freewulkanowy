@@ -9,8 +9,8 @@ import io.github.freewulkanowy.data.repositories.PreferencesRepository
 import io.github.freewulkanowy.data.repositories.SchoolsRepository
 import io.github.freewulkanowy.data.repositories.StudentRepository
 import io.github.freewulkanowy.domain.adminmessage.GetAppropriateAdminMessageUseCase
-import io.github.wulkanowy.sdk.Sdk
-import io.github.wulkanowy.sdk.scrapper.Scrapper
+import io.github.freewulkanowy.sdk.Sdk
+import io.github.freewulkanowy.sdk.scrapper.Scrapper
 import io.github.freewulkanowy.services.sync.SyncManager
 import io.github.freewulkanowy.ui.modules.login.LoginData
 import io.github.freewulkanowy.ui.modules.login.LoginErrorHandler

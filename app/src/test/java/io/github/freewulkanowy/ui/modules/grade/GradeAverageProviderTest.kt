@@ -12,7 +12,7 @@ import io.github.freewulkanowy.data.repositories.SemesterRepository
 import io.github.freewulkanowy.data.resourceFlow
 import io.github.freewulkanowy.data.toFirstResult
 import io.github.freewulkanowy.getSemesterEntity
-import io.github.wulkanowy.sdk.Sdk
+import io.github.freewulkanowy.sdk.Sdk
 import io.github.freewulkanowy.utils.Status
 import io.github.freewulkanowy.utils.status
 import io.mockk.MockKAnnotations

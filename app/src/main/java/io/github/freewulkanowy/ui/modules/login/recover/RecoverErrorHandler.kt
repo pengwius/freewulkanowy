@@ -2,9 +2,9 @@ package io.github.freewulkanowy.ui.modules.login.recover
 
 import android.content.Context
 import dagger.hilt.android.qualifiers.ApplicationContext
-import io.github.wulkanowy.sdk.scrapper.exception.InvalidCaptchaException
-import io.github.wulkanowy.sdk.scrapper.exception.InvalidEmailException
-import io.github.wulkanowy.sdk.scrapper.exception.NoAccountFoundException
+import io.github.freewulkanowy.sdk.scrapper.exception.InvalidCaptchaException
+import io.github.freewulkanowy.sdk.scrapper.exception.InvalidEmailException
+import io.github.freewulkanowy.sdk.scrapper.exception.NoAccountFoundException
 import io.github.freewulkanowy.ui.base.ErrorHandler
 import javax.inject.Inject
 

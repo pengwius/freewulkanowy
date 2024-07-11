@@ -30,7 +30,7 @@ import io.github.freewulkanowy.data.pojos.MessageDraft
 import io.github.freewulkanowy.data.toFirstResult
 import io.github.freewulkanowy.data.waitForResult
 import io.github.freewulkanowy.domain.messages.GetMailboxByStudentUseCase
-import io.github.wulkanowy.sdk.pojo.Folder
+import io.github.freewulkanowy.sdk.pojo.Folder
 import io.github.freewulkanowy.utils.AutoRefreshHelper
 import io.github.freewulkanowy.utils.getRefreshKey
 import io.github.freewulkanowy.utils.uniqueSubtract

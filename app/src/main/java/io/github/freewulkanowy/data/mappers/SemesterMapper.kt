@@ -1,7 +1,7 @@
 package io.github.freewulkanowy.data.mappers
 
 import io.github.freewulkanowy.data.db.entities.Semester
-import io.github.wulkanowy.sdk.pojo.Semester as SdkSemester
+import io.github.freewulkanowy.sdk.pojo.Semester as SdkSemester
 
 fun List<SdkSemester>.mapToEntities(studentId: Int) = map {
     Semester(

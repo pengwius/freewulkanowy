@@ -1,6 +1,6 @@
 package io.github.freewulkanowy.data.mappers
 
-import io.github.wulkanowy.sdk.pojo.Homework as SdkHomework
+import io.github.freewulkanowy.sdk.pojo.Homework as SdkHomework
 import io.github.freewulkanowy.data.db.entities.Homework
 import io.github.freewulkanowy.data.db.entities.Semester
 

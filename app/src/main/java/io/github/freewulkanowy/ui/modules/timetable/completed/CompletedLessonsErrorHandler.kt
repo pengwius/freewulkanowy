@@ -2,7 +2,7 @@ package io.github.freewulkanowy.ui.modules.timetable.completed
 
 import android.content.Context
 import dagger.hilt.android.qualifiers.ApplicationContext
-import io.github.wulkanowy.sdk.scrapper.exception.FeatureDisabledException
+import io.github.freewulkanowy.sdk.scrapper.exception.FeatureDisabledException
 import io.github.freewulkanowy.ui.base.ErrorHandler
 import javax.inject.Inject
 

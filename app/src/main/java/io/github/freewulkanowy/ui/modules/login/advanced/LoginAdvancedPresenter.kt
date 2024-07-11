@@ -6,8 +6,8 @@ import io.github.freewulkanowy.data.onResourceNotLoading
 import io.github.freewulkanowy.data.pojos.RegisterUser
 import io.github.freewulkanowy.data.repositories.StudentRepository
 import io.github.freewulkanowy.data.resourceFlow
-import io.github.wulkanowy.sdk.Sdk
-import io.github.wulkanowy.sdk.scrapper.getNormalizedSymbol
+import io.github.freewulkanowy.sdk.Sdk
+import io.github.freewulkanowy.sdk.scrapper.getNormalizedSymbol
 import io.github.freewulkanowy.ui.base.BasePresenter
 import io.github.freewulkanowy.ui.modules.login.LoginData
 import io.github.freewulkanowy.ui.modules.login.LoginErrorHandler

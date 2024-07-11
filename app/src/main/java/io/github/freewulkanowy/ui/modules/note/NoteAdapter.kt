@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 import io.github.freewulkanowy.R
 import io.github.freewulkanowy.data.db.entities.Note
 import io.github.freewulkanowy.databinding.ItemNoteBinding
-import io.github.wulkanowy.sdk.scrapper.notes.NoteCategory
+import io.github.freewulkanowy.sdk.scrapper.notes.NoteCategory
 import io.github.freewulkanowy.utils.getThemeAttrColor
 import io.github.freewulkanowy.utils.toFormattedString
 import javax.inject.Inject

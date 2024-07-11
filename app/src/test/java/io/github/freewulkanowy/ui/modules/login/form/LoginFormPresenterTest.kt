@@ -5,8 +5,8 @@ import io.github.freewulkanowy.data.pojos.RegisterUser
 import io.github.freewulkanowy.data.repositories.PreferencesRepository
 import io.github.freewulkanowy.data.repositories.StudentRepository
 import io.github.freewulkanowy.domain.adminmessage.GetAppropriateAdminMessageUseCase
-import io.github.wulkanowy.sdk.Sdk
-import io.github.wulkanowy.sdk.scrapper.Scrapper
+import io.github.freewulkanowy.sdk.Sdk
+import io.github.freewulkanowy.sdk.scrapper.Scrapper
 import io.github.freewulkanowy.ui.modules.login.LoginErrorHandler
 import io.github.freewulkanowy.utils.AnalyticsHelper
 import io.github.freewulkanowy.utils.AppInfo

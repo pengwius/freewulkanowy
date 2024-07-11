@@ -7,7 +7,7 @@ import io.github.freewulkanowy.data.mappers.mapToEntities
 import io.github.freewulkanowy.getSemesterEntity
 import io.github.freewulkanowy.getSemesterPojo
 import io.github.freewulkanowy.getStudentEntity
-import io.github.wulkanowy.sdk.Sdk
+import io.github.freewulkanowy.sdk.Sdk
 import io.mockk.MockKAnnotations
 import io.mockk.Runs
 import io.mockk.coEvery

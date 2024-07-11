@@ -5,8 +5,8 @@ import io.github.freewulkanowy.data.db.dao.RecipientDao
 import io.github.freewulkanowy.data.mappers.mapToEntities
 import io.github.freewulkanowy.getMailboxEntity
 import io.github.freewulkanowy.getStudentEntity
-import io.github.wulkanowy.sdk.Sdk
-import io.github.wulkanowy.sdk.pojo.MailboxType
+import io.github.freewulkanowy.sdk.Sdk
+import io.github.freewulkanowy.sdk.pojo.MailboxType
 import io.github.freewulkanowy.utils.AutoRefreshHelper
 import io.mockk.MockKAnnotations
 import io.mockk.Runs
@@ -20,7 +20,7 @@ import kotlinx.coroutines.runBlocking
 import org.junit.Assert.assertEquals
 import org.junit.Before
 import org.junit.Test
-import io.github.wulkanowy.sdk.pojo.Recipient as SdkRecipient
+import io.github.freewulkanowy.sdk.pojo.Recipient as SdkRecipient
 
 class RecipientLocalTest {
 

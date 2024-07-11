@@ -3,7 +3,7 @@ package io.github.freewulkanowy.data.mappers
 import io.github.freewulkanowy.data.db.entities.Mailbox
 import io.github.freewulkanowy.data.db.entities.MailboxType
 import io.github.freewulkanowy.data.db.entities.Student
-import io.github.wulkanowy.sdk.pojo.Mailbox as SdkMailbox
+import io.github.freewulkanowy.sdk.pojo.Mailbox as SdkMailbox
 
 fun List<SdkMailbox>.mapToEntities(student: Student) = map {
     Mailbox(

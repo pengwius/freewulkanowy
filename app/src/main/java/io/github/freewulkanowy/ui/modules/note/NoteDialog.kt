@@ -11,7 +11,7 @@ import dagger.hilt.android.AndroidEntryPoint
 import io.github.freewulkanowy.R
 import io.github.freewulkanowy.data.db.entities.Note
 import io.github.freewulkanowy.databinding.DialogNoteBinding
-import io.github.wulkanowy.sdk.scrapper.notes.NoteCategory
+import io.github.freewulkanowy.sdk.scrapper.notes.NoteCategory
 import io.github.freewulkanowy.ui.base.BaseDialogFragment
 import io.github.freewulkanowy.utils.getThemeAttrColor
 import io.github.freewulkanowy.utils.serializable

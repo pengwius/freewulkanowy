@@ -4,8 +4,8 @@ import io.github.freewulkanowy.data.db.entities.Semester
 import io.github.freewulkanowy.data.db.entities.StudentGuardian
 import io.github.freewulkanowy.data.db.entities.StudentInfo
 import io.github.freewulkanowy.data.enums.Gender
-import io.github.wulkanowy.sdk.pojo.StudentGuardian as SdkStudentGuardian
-import io.github.wulkanowy.sdk.pojo.StudentInfo as SdkStudentInfo
+import io.github.freewulkanowy.sdk.pojo.StudentGuardian as SdkStudentGuardian
+import io.github.freewulkanowy.sdk.pojo.StudentInfo as SdkStudentInfo
 
 fun SdkStudentInfo.mapToEntity(semester: Semester) = StudentInfo(
     studentId = semester.studentId,

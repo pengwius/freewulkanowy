@@ -5,7 +5,7 @@ import io.github.freewulkanowy.data.db.entities.Mailbox
 import io.github.freewulkanowy.data.db.entities.MailboxType
 import io.github.freewulkanowy.data.db.entities.Student
 import io.github.freewulkanowy.domain.messages.GetMailboxByStudentUseCase
-import io.github.wulkanowy.sdk.Sdk
+import io.github.freewulkanowy.sdk.Sdk
 import io.mockk.MockKAnnotations
 import io.mockk.Runs
 import io.mockk.coEvery

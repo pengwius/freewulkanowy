@@ -1,7 +1,7 @@
 package io.github.freewulkanowy
 
 import io.github.freewulkanowy.data.WulkanowySdkFactory
-import io.github.wulkanowy.sdk.Sdk
+import io.github.freewulkanowy.sdk.Sdk
 import io.mockk.coEvery
 import io.mockk.every
 import io.mockk.mockk

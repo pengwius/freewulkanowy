@@ -2,8 +2,8 @@ package io.github.freewulkanowy.data.mappers
 
 import io.github.freewulkanowy.data.db.entities.Semester
 import io.github.freewulkanowy.data.db.entities.Timetable
-import io.github.wulkanowy.sdk.pojo.Attendance
-import io.github.wulkanowy.sdk.scrapper.attendance.SentExcuseStatus
+import io.github.freewulkanowy.sdk.pojo.Attendance
+import io.github.freewulkanowy.sdk.scrapper.attendance.SentExcuseStatus
 import org.junit.Test
 import java.time.Instant
 import java.time.LocalDate

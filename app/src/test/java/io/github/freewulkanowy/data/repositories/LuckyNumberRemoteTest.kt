@@ -7,7 +7,7 @@ import io.github.freewulkanowy.data.errorOrNull
 import io.github.freewulkanowy.data.mappers.mapToEntity
 import io.github.freewulkanowy.data.toFirstResult
 import io.github.freewulkanowy.getStudentEntity
-import io.github.wulkanowy.sdk.Sdk
+import io.github.freewulkanowy.sdk.Sdk
 import io.github.freewulkanowy.utils.AppWidgetUpdater
 import io.mockk.MockKAnnotations
 import io.mockk.Runs
@@ -23,7 +23,7 @@ import org.junit.Assert.assertEquals
 import org.junit.Before
 import org.junit.Test
 import java.time.LocalDate
-import io.github.wulkanowy.sdk.pojo.LuckyNumber as SdkLuckyNumber
+import io.github.freewulkanowy.sdk.pojo.LuckyNumber as SdkLuckyNumber
 
 class LuckyNumberRemoteTest {
 

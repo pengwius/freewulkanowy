@@ -10,9 +10,9 @@ import io.github.freewulkanowy.data.mappers.mapToEntities
 import io.github.freewulkanowy.data.toFirstResult
 import io.github.freewulkanowy.getSemesterEntity
 import io.github.freewulkanowy.getStudentEntity
-import io.github.wulkanowy.sdk.Sdk
-import io.github.wulkanowy.sdk.pojo.GradeStatisticsItem
-import io.github.wulkanowy.sdk.pojo.GradeStatisticsSubject
+import io.github.freewulkanowy.sdk.Sdk
+import io.github.freewulkanowy.sdk.pojo.GradeStatisticsItem
+import io.github.freewulkanowy.sdk.pojo.GradeStatisticsSubject
 import io.github.freewulkanowy.utils.AutoRefreshHelper
 import io.mockk.MockKAnnotations
 import io.mockk.Runs

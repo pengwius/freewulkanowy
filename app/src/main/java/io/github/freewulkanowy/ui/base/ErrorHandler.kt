@@ -4,9 +4,9 @@ import android.content.Context
 import dagger.hilt.android.qualifiers.ApplicationContext
 import io.github.freewulkanowy.data.exceptions.NoCurrentStudentException
 import io.github.freewulkanowy.data.repositories.NoAuthorizationException
-import io.github.wulkanowy.sdk.scrapper.exception.CloudflareVerificationException
-import io.github.wulkanowy.sdk.scrapper.login.BadCredentialsException
-import io.github.wulkanowy.sdk.scrapper.login.PasswordChangeRequiredException
+import io.github.freewulkanowy.sdk.scrapper.exception.CloudflareVerificationException
+import io.github.freewulkanowy.sdk.scrapper.login.BadCredentialsException
+import io.github.freewulkanowy.sdk.scrapper.login.PasswordChangeRequiredException
 import io.github.freewulkanowy.utils.getErrorString
 import io.github.freewulkanowy.utils.security.ScramblerException
 import timber.log.Timber

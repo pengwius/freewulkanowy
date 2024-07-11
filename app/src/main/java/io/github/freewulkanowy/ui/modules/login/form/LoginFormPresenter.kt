@@ -14,7 +14,7 @@ import io.github.freewulkanowy.data.repositories.PreferencesRepository
 import io.github.freewulkanowy.data.repositories.StudentRepository
 import io.github.freewulkanowy.data.resourceFlow
 import io.github.freewulkanowy.domain.adminmessage.GetAppropriateAdminMessageUseCase
-import io.github.wulkanowy.sdk.scrapper.login.InvalidSymbolException
+import io.github.freewulkanowy.sdk.scrapper.login.InvalidSymbolException
 import io.github.freewulkanowy.ui.base.BasePresenter
 import io.github.freewulkanowy.ui.modules.login.LoginData
 import io.github.freewulkanowy.ui.modules.login.LoginErrorHandler

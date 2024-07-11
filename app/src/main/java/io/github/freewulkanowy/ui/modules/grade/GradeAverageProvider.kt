@@ -14,7 +14,7 @@ import io.github.freewulkanowy.data.mapResourceData
 import io.github.freewulkanowy.data.repositories.GradeRepository
 import io.github.freewulkanowy.data.repositories.PreferencesRepository
 import io.github.freewulkanowy.data.repositories.SemesterRepository
-import io.github.wulkanowy.sdk.Sdk
+import io.github.freewulkanowy.sdk.Sdk
 import io.github.freewulkanowy.ui.modules.grade.GradeAverageMode.ALL_YEAR
 import io.github.freewulkanowy.ui.modules.grade.GradeAverageMode.BOTH_SEMESTERS
 import io.github.freewulkanowy.ui.modules.grade.GradeAverageMode.ONE_SEMESTER

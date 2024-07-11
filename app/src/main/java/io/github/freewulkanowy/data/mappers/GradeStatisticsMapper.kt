@@ -5,9 +5,9 @@ import io.github.freewulkanowy.data.db.entities.GradePointsStatistics
 import io.github.freewulkanowy.data.db.entities.GradeSemesterStatistics
 import io.github.freewulkanowy.data.db.entities.Semester
 import io.github.freewulkanowy.data.pojos.GradeStatisticsItem
-import io.github.wulkanowy.sdk.pojo.GradePointsStatistics as SdkGradePointsStatistics
-import io.github.wulkanowy.sdk.pojo.GradeStatisticsSemester as SdkGradeStatisticsSemester
-import io.github.wulkanowy.sdk.pojo.GradeStatisticsSubject as SdkGradeStatisticsSubject
+import io.github.freewulkanowy.sdk.pojo.GradePointsStatistics as SdkGradePointsStatistics
+import io.github.freewulkanowy.sdk.pojo.GradeStatisticsSemester as SdkGradeStatisticsSemester
+import io.github.freewulkanowy.sdk.pojo.GradeStatisticsSubject as SdkGradeStatisticsSubject
 
 @JvmName("mapToEntitiesSubject")
 fun List<SdkGradeStatisticsSubject>.mapToEntities(semester: Semester) = map {

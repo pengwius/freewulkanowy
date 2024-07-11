@@ -7,7 +7,7 @@ import io.github.freewulkanowy.data.db.entities.Note
 import io.github.freewulkanowy.data.db.entities.Student
 import io.github.freewulkanowy.data.pojos.GroupNotificationData
 import io.github.freewulkanowy.data.pojos.NotificationData
-import io.github.wulkanowy.sdk.scrapper.notes.NoteCategory
+import io.github.freewulkanowy.sdk.scrapper.notes.NoteCategory
 import io.github.freewulkanowy.ui.modules.Destination
 import io.github.freewulkanowy.ui.modules.splash.SplashActivity
 import io.github.freewulkanowy.utils.getPlural

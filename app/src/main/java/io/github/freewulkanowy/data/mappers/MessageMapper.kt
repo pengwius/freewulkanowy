@@ -1,11 +1,11 @@
 package io.github.freewulkanowy.data.mappers
 
 import io.github.freewulkanowy.data.db.entities.*
-import io.github.wulkanowy.sdk.pojo.MailboxType
+import io.github.freewulkanowy.sdk.pojo.MailboxType
 import timber.log.Timber
-import io.github.wulkanowy.sdk.pojo.Message as SdkMessage
-import io.github.wulkanowy.sdk.pojo.MessageAttachment as SdkMessageAttachment
-import io.github.wulkanowy.sdk.pojo.Recipient as SdkRecipient
+import io.github.freewulkanowy.sdk.pojo.Message as SdkMessage
+import io.github.freewulkanowy.sdk.pojo.MessageAttachment as SdkMessageAttachment
+import io.github.freewulkanowy.sdk.pojo.Recipient as SdkRecipient
 
 fun List<SdkMessage>.mapToEntities(
     student: Student,
