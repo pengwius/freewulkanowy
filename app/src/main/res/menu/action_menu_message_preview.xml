@@ -9,6 +9,13 @@
         app:iconTint="@color/material_on_surface_emphasis_medium"
         app:showAsAction="ifRoom" />
     <item
+        android:id="@+id/messagePreviewMenuMarkReadIncognito"
+        android:icon="@drawable/ic_message_mark_read"
+        android:orderInCategory="1"
+        android:title="@string/message_read_incognito"
+        app:iconTint="@color/material_on_surface_emphasis_medium"
+        app:showAsAction="ifRoom" />
+    <item
         android:id="@+id/messagePreviewMenuShare"
         android:icon="@drawable/ic_menu_message_share"
         android:orderInCategory="1"

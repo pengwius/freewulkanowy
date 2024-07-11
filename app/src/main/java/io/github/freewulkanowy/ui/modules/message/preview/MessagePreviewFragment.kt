@@ -52,6 +52,8 @@ class MessagePreviewFragment :
 
     private var menuShareButton: MenuItem? = null
 
+    private var menuMarkReadButton: MenuItem? = null
+
     private var menuPrintButton: MenuItem? = null
 
     private var menuMuteButton: MenuItem? = null
@@ -122,6 +124,7 @@ class MessagePreviewFragment :
         menuDeleteButton = menu.findItem(R.id.messagePreviewMenuDelete)
         menuDeleteForeverButton = menu.findItem(R.id.messagePreviewMenuDeleteForever)
         menuShareButton = menu.findItem(R.id.messagePreviewMenuShare)
+        menuMarkReadButton = menu.findItem(R.id.messagePreviewMenuMarkReadIncognito)
         menuPrintButton = menu.findItem(R.id.messagePreviewMenuPrint)
         menuMuteButton = menu.findItem(R.id.messagePreviewMenuMute)
         presenter.onCreateOptionsMenu()
@@ -137,6 +140,7 @@ class MessagePreviewFragment :
             R.id.messagePreviewMenuDelete -> presenter.onMessageDelete()
             R.id.messagePreviewMenuDeleteForever -> presenter.onMessageDelete()
             R.id.messagePreviewMenuShare -> presenter.onShare()
+            R.id.messagePreviewMenuMarkReadIncognito -> presenter.onMarkRead(item)
             R.id.messagePreviewMenuPrint -> presenter.onPrint()
             R.id.messagePreviewMenuMute -> presenter.onMute()
             else -> false
@@ -163,13 +167,14 @@ class MessagePreviewFragment :
         binding.messagePreviewRecycler.visibility = if (show) VISIBLE else GONE
     }
 
-    override fun showOptions(show: Boolean, isReplayable: Boolean, isRestorable: Boolean) {
+    override fun showOptions(show: Boolean, isReplayable: Boolean, isRestorable: Boolean, isUnreadIncognito: Boolean) {
         menuReplyButton?.isVisible = show && isReplayable
         menuForwardButton?.isVisible = show
         menuRestoreButton?.isVisible = show && isRestorable
         menuDeleteButton?.isVisible = show && !isRestorable
         menuDeleteForeverButton?.isVisible = show && isRestorable
         menuShareButton?.isVisible = show
+        menuMarkReadButton?.isVisible = show && isUnreadIncognito
         menuPrintButton?.isVisible = show
         menuMuteButton?.isVisible = show && isReplayable
     }

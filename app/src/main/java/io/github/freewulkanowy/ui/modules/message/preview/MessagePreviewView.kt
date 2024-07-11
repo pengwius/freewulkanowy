@@ -37,7 +37,7 @@ interface MessagePreviewView : BaseView {
 
     fun setErrorRetryCallback(callback: () -> Unit)
 
-    fun showOptions(show: Boolean, isReplayable: Boolean, isRestorable: Boolean)
+    fun showOptions(show: Boolean, isReplayable: Boolean, isRestorable: Boolean, isUnreadIncognito: Boolean)
 
     fun openMessageReply(message: Message?)
 

@@ -400,6 +400,9 @@
     <string name="message_mailbox_chooser_title">Wybierz skrzynkę</string>
     <string name="message_incognito_mode_on">Tryb incognito jest włączony</string>
     <string name="message_incognito_description">Dzięki trybowi incognito nadawca nie zobaczy, że przeczytałeś tę wiadomość</string>
+    <string name="message_read_incognito">Odczytaj wiadomość</string>
+    <string name="message_incognito_markread_success">Odczytano wiadomość</string>
+    <string name="message_incognito_markread_error">Podczas odczytywania wiadomości wystąpił błąd</string>
     <!--Note-->
     <string name="note_no_items">Brak informacji o uwagach</string>
     <string name="note_points">Punkty</string>

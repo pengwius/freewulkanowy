@@ -381,6 +381,9 @@
     <string name="message_mailbox_chooser_title">Choose mailbox</string>
     <string name="message_incognito_mode_on">Incognito mode is on</string>
     <string name="message_incognito_description">Thanks to incognito mode sender is not notified when you read the message</string>
+    <string name="message_read_incognito">Mark as read</string>
+    <string name="message_incognito_markread_success">Message marked as read</string>
+    <string name="message_incognito_markread_error">Could not mark message as read</string>
 
 
     <!--Note-->

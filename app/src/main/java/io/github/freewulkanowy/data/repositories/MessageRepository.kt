@@ -148,6 +148,32 @@ class MessageRepository @Inject constructor(
         }
     )
 
+    fun markMessageRead(
+        student: Student,
+        message: Message
+    ): Flow<Resource<MessageWithAttachment?>> = networkBoundResource(
+        isResultEmpty = { it?.message?.content.isNullOrBlank() },
+        shouldFetch = {
+            checkNotNull(it) { "This message no longer exist!" }
+            message.unread
+        },
+        query = { messagesDb.loadMessageWithAttachment(message.messageGlobalKey) },
+        fetch = {
+            wulkanowySdkFactory.create(student)
+                .markMessageRead(
+                    messageKey = message.messageGlobalKey
+                )
+        },
+        saveFetchResult = { old, _ ->
+            checkNotNull(old) { "Fetched message no longer exist!" }
+            messagesDb.updateAll(
+                listOf(old.message.apply { unread = false })
+            )
+
+            Timber.d("Marking as read message ${message.messageId} with blank content: ${old.message.content.isBlank()}")
+        }
+    )
+
     fun getMessagesFromDatabase(student: Student, mailbox: Mailbox?): Flow<List<Message>> {
         return if (mailbox == null) {
             messagesDb.loadAll(RECEIVED.id, student.email)

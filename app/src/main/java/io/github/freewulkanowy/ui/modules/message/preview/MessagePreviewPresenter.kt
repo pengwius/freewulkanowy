@@ -1,6 +1,7 @@
 package io.github.freewulkanowy.ui.modules.message.preview
 
 import android.annotation.SuppressLint
+import android.view.MenuItem
 import androidx.core.text.parseAsHtml
 import io.github.freewulkanowy.R
 import io.github.freewulkanowy.data.db.entities.Message
@@ -148,6 +149,30 @@ class MessagePreviewPresenter @Inject constructor(
         return true
     }
 
+    fun onMarkRead(i: MenuItem): Boolean {
+        val message = checkNotNull(messageWithAttachments?.message)
+
+        flatResourceFlow {
+            val student = studentRepository.getCurrentStudent()
+            messageRepository.markMessageRead(
+                student = student,
+                message = message
+            )
+        }
+            .logResourceStatus("message ${message.messageId} mark as read")
+            .onResourceSuccess {
+                if (it != null) {
+                    view?.showMessage(R.string.message_incognito_markread_success)
+                }
+            }.onResourceError {
+                view?.showMessage(R.string.message_incognito_markread_error)
+                errorHandler.dispatch(it)
+            }.launch()
+
+        i.setVisible(false)
+        return true
+    }
+
     @SuppressLint("NewApi")
     fun onPrint(): Boolean {
         val message = messageWithAttachments?.message ?: return false
@@ -190,6 +215,7 @@ class MessagePreviewPresenter @Inject constructor(
                 show = false,
                 isReplayable = false,
                 isRestorable = false,
+                isUnreadIncognito = false
             )
             showErrorView(false)
         }
@@ -224,6 +250,7 @@ class MessagePreviewPresenter @Inject constructor(
                 show = false,
                 isReplayable = false,
                 isRestorable = false,
+                isUnreadIncognito = false
             )
             showErrorView(false)
         }
@@ -274,6 +301,17 @@ class MessagePreviewPresenter @Inject constructor(
                 show = messageWithAttachments?.message != null,
                 isReplayable = messageWithAttachments?.message?.folderId == MessageFolder.RECEIVED.id,
                 isRestorable = messageWithAttachments?.message?.folderId == MessageFolder.TRASHED.id,
+                /*
+                 * The unread check assumes that if a message is marked as read in the database,
+                 * it's also on the server. This is a bug as the status may have been already changed
+                 * from other app instalation or from web client. The bug is already present somewhere
+                 * else and causes messages marked as read "externally" showing as unread in incognito
+                 * mode. I think the solution should be splitting the unread status to that internal,
+                 * seen in the app and that how is it seen by server. I'll fix it if I would have time.
+                 */
+                isUnreadIncognito = preferencesRepository.isIncognitoMode
+                    && messageWithAttachments?.message?.unreadBy == null
+                    && messageWithAttachments?.message?.unread == true
             )
         }
     }
