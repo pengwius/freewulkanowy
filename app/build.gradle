@@ -193,7 +193,7 @@ ext {
 dependencies {
 //    implementation 'com.github.wulkanowy:sdk:master-SNAPSHOT'
 //    implementation 'com.github.Pengwius:wulkanowy-sdk:master-SNAPSHOT'
-    implementation 'com.github.Pengwius.wulkanowy-sdk:build:9bc353bf7e'
+    implementation 'com.github.Pengwius.wulkanowy-sdk:build:17856ee997'
 //    implementation 'io.github.freewulkanowy:wulkanowy-sdk:2.7.0'
 
     coreLibraryDesugaring 'com.android.tools:desugar_jdk_libs:2.0.4'
