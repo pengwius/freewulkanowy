@@ -200,7 +200,7 @@ class LoginAdvancedPresenter @Inject constructor(
             )
 
             Sdk.Mode.HYBRID -> studentRepository.getStudentsHybrid(
-                email, password, endpoint, symbol
+                email, password, endpoint, domainSuffix, symbol
             )
         }
     }

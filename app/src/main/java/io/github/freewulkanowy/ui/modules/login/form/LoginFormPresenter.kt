@@ -1,6 +1,7 @@
 package io.github.freewulkanowy.ui.modules.login.form
 
 import androidx.core.net.toUri
+import io.github.freewulkanowy.data.Resource
 import io.github.freewulkanowy.data.db.entities.AdminMessage
 import io.github.freewulkanowy.data.enums.MessageType
 import io.github.freewulkanowy.data.flatResourceFlow
@@ -14,6 +15,7 @@ import io.github.freewulkanowy.data.repositories.PreferencesRepository
 import io.github.freewulkanowy.data.repositories.StudentRepository
 import io.github.freewulkanowy.data.resourceFlow
 import io.github.freewulkanowy.domain.adminmessage.GetAppropriateAdminMessageUseCase
+import io.github.freewulkanowy.sdk.scrapper.getNormalizedSymbol
 import io.github.freewulkanowy.sdk.scrapper.login.InvalidSymbolException
 import io.github.freewulkanowy.ui.base.BasePresenter
 import io.github.freewulkanowy.ui.modules.login.LoginData
@@ -22,6 +24,7 @@ import io.github.freewulkanowy.ui.modules.login.support.LoginSupportInfo
 import io.github.freewulkanowy.utils.AnalyticsHelper
 import io.github.freewulkanowy.utils.AppInfo
 import io.github.freewulkanowy.utils.ifNullOrBlank
+import kotlinx.coroutines.flow.onEach
 import timber.log.Timber
 import java.net.URL
 import javax.inject.Inject
@@ -169,7 +172,7 @@ class LoginFormPresenter @Inject constructor(
         if (!validateCredentials(loginData)) return
 
         resourceFlow {
-            studentRepository.getUserSubjectsFromScrapper(
+            studentRepository.getStudentsHybrid(
                 email = loginData.login,
                 password = loginData.password,
                 scrapperBaseUrl = loginData.baseUrl,
@@ -178,46 +181,52 @@ class LoginFormPresenter @Inject constructor(
             )
         }
             .logResourceStatus("login")
-            .onResourceLoading {
-                view?.run {
-                    hideSoftKeyboard()
-                    showProgress(true)
-                    showContent(false)
+            .onEach {
+                when (it) {
+                    is Resource.Loading -> view?.run {
+                        hideSoftKeyboard()
+                        showProgress(true)
+                        showContent(false)
+                    }
+
+                    is Resource.Success -> {
+                        analytics.logEvent(
+                            "registration_form",
+                            "success" to true,
+                            "scrapperBaseUrl" to view?.formHostValue.orEmpty(),
+                            "error" to "No error"
+                        )
+                        val loginData = LoginData(
+                            login = view?.formUsernameValue.orEmpty().trim(),
+                            password = view?.formPassValue.orEmpty().trim(),
+                            baseUrl = view?.formHostValue.orEmpty().trim(),
+                            domainSuffix = view?.formDomainSuffix.orEmpty().trim(),
+                            defaultSymbol = "",
+                        )
+                        when (it.data.symbols.size) {
+                            0 -> view?.navigateToSymbol(loginData)
+                            else -> view?.navigateToStudentSelect(
+                                loginData = loginData,
+                                registerUser = it.data,
+                            )
+                        }
+                    }
+
+                    is Resource.Error -> {
+                        analytics.logEvent(
+                            "registration_form",
+                            "success" to false, "students" to -1,
+                            "error" to it.error.message.ifNullOrBlank { "No message" }
+                        )
+                        loginErrorHandler.dispatch(it.error)
+                    }
                 }
-            }
-            .onResourceSuccess {
-                when (it.symbols.size) {
-                    0 -> view?.navigateToSymbol(loginData)
-                    else -> view?.navigateToStudentSelect(loginData, it)
-                }
-                analytics.logEvent(
-                    "registration_form",
-                    "success" to true,
-                    "scrapperBaseUrl" to loginData.baseUrl,
-                    "error" to "No error"
-                )
-            }
-            .onResourceNotLoading {
+            }.onResourceNotLoading {
                 view?.apply {
                     showProgress(false)
                     showContent(true)
                 }
-            }
-            .onResourceError {
-                loginErrorHandler.dispatch(it)
-                if (it is InvalidSymbolException) {
-                    loginErrorHandler.showDefaultMessage(it)
-                }
-                lastError = it
-                view?.showContact(true)
-                analytics.logEvent(
-                    "registration_form",
-                    "success" to false,
-                    "scrapperBaseUrl" to loginData.baseUrl,
-                    "error" to it.message.ifNullOrBlank { "No message" }
-                )
-            }
-            .launch("login")
+            }.launch("login")
     }
 
     fun onFaqClick() {
