@@ -8,6 +8,14 @@
 Nieoficjalny klient dziennika VULCAN UONET+ dla ucznia i rodzica
 
 ##
+
+# INFORMACJA
+Aplikacja nie będzie dalej rozwijana. Proponuje pobrać alternatywę - [Etna](https://gitlab.com/etnaapp/Etna/-/releases)
+Nie jestem twórcą aplikacji. Pisma przedsądowe, pozwy, groźby śmierci proszę kierować do twórcy aplikacji. Pisma należy kierować za pośrednictwem tylko i wyłącznie paczek ponadgabarytowych na europaletach pod adres
+Huam Pablo II, Szkolna 17, 15-640 Białystok
+Poczta odbierana jest tylko w dniu 25 grudnia o godzinie 2:10, pracownicy odbierający pocztę mają przerwę od 2:00 do 2:20.
+
+##
 Aplikacja jest hobbystycznie tworzona przez uczniów, dla uczniów i rodziców. Nie mamy nic wspólnego z firmą Vulcan. Oficjalną aplikację możesz znaleźć pod nazwą [Dzienniczek VULCAN](https://play.google.com/store/apps/details?id=pl.edu.vulcan.hebe) w sklepie Google Play.
 ##
 
