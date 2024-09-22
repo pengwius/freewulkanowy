@@ -15,6 +15,8 @@ Nie jestem twórcą aplikacji. Pisma przedsądowe, pozwy, groźby śmierci prosz
 Huam Pablo II, Szkolna 17, 15-640 Białystok
 Poczta odbierana jest tylko w dniu 25 grudnia o godzinie 2:10, pracownicy odbierający pocztę mają przerwę od 2:00 do 2:20.
 
+Każde pismo przedsądowe zostanie uznane za groźbę spowodowania postępowania karnego na podstawie artykułu 115 § 12 Kodeksu Karnego i zostanie ścigane na wniosek poszkodowanego na podstawie artykułu 190 Kodeksu Karnego
+
 ##
 Aplikacja jest hobbystycznie tworzona przez uczniów, dla uczniów i rodziców. Nie mamy nic wspólnego z firmą Vulcan. Oficjalną aplikację możesz znaleźć pod nazwą [Dzienniczek VULCAN](https://play.google.com/store/apps/details?id=pl.edu.vulcan.hebe) w sklepie Google Play.
 ##
