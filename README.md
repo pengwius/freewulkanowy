@@ -15,6 +15,8 @@ Nie jestem twórcą aplikacji. Pisma przedsądowe, pozwy, groźby śmierci prosz
 Huam Pablo II, Szkolna 17, 15-640 Białystok
 Poczta odbierana jest tylko w dniu 25 grudnia o godzinie 2:10, pracownicy odbierający pocztę mają przerwę od 2:00 do 2:20.
 
+Znak towarowy VULCAN w repozytorium jest użyty tylko i wyłącznie w celach informacyjnych na podstawie Art. 156. wł. przemysł.
+
 Każde pismo przedsądowe zostanie uznane za groźbę spowodowania postępowania karnego na podstawie artykułu 115 § 12 Kodeksu Karnego i zostanie ścigane na wniosek poszkodowanego na podstawie artykułu 190 Kodeksu Karnego
 
 ##
