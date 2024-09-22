@@ -11,9 +11,7 @@ Nieoficjalny klient dziennika VULCAN UONET+ dla ucznia i rodzica
 
 # INFORMACJA
 Aplikacja nie będzie dalej rozwijana. Proponuje pobrać alternatywę - [Etna](https://github.com/Pengwius/freewulkanowy/releases/download/etna-migracja/app-release.apk)
-Nie jestem twórcą aplikacji. Pisma przedsądowe, pozwy, groźby śmierci proszę kierować do twórcy aplikacji. Pisma należy kierować za pośrednictwem tylko i wyłącznie paczek ponadgabarytowych na europaletach pod adres
-Huam Pablo II, Szkolna 17, 15-640 Białystok
-Poczta odbierana jest tylko w dniu 25 grudnia o godzinie 2:10, pracownicy odbierający pocztę mają przerwę od 2:00 do 2:20.
+Nie jestem twórcą aplikacji. Pisma przedsądowe, pozwy, groźby śmierci proszę kierować do twórcy aplikacji.
 
 Znak towarowy VULCAN w repozytorium jest użyty tylko i wyłącznie w celach informacyjnych na podstawie Art. 156. wł. przemysł.
 
