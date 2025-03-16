@@ -11,7 +11,7 @@ Nieoficjalny klient dziennika VULCAN UONET+ dla ucznia i rodzica
 
 # INFORMACJA
 Aplikacja nie będzie dalej rozwijana. Proponuje pobrać alternatywę - [Etna](https://github.com/Pengwius/freewulkanowy/releases/download/etna-migracja/app-release.apk)
-**Nie jestem twórcą aplikacji.**
+**Nie jestem twórcą aplikacji** , jednak wszelką komunikację można kierować do mnie.
 
 ##
 Aplikacja jest hobbystycznie tworzona przez uczniów, dla uczniów i rodziców. Nie mamy nic wspólnego z firmą Vulcan. Oficjalną aplikację możesz znaleźć pod nazwą [Dzienniczek VULCAN](https://play.google.com/store/apps/details?id=pl.edu.vulcan.hebe) w sklepie Google Play.
