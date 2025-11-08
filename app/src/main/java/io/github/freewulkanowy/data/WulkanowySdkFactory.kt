@@ -112,8 +112,8 @@ class WulkanowySdkFactory @Inject constructor(
 //            }
 
 //            mode = Sdk.Mode.valueOf(student.loginMode)
-//            mode = Sdk.Mode.HYBRID
-            mode = Sdk.Mode.SCRAPPER
+            mode = Sdk.Mode.HYBRID
+//            mode = Sdk.Mode.SCRAPPER
             mobileBaseUrl = student.mobileBaseUrl
             keyId = student.certificateKey
             privatePem = student.privateKey
