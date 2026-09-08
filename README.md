@@ -10,9 +10,7 @@ Nieoficjalny klient dziennika VULCAN UONET+ dla ucznia i rodzica
 ##
 
 # INFORMACJA
-Aplikacja nie będzie dalej rozwijana. Polecam pobrać alternatywę - [Etna](https://github.com/pengwius/freewulkanowy/releases/download/etna-0.0.0-beta%2B260401-1/app-release.apk)
-
-Dla użytkowników iOS .ipa można pobrać [stąd](https://github.com/pengwius/freewulkanowy/releases/download/etna-0.0.0-beta%2B260401-1/Etna_0.0.0-ios+260309-vulcan-web-timetable-changes.ipa) lub z repozytorium altstore: https://etna.dudu.ovh/altstore.json
+Aplikacja nie będzie dalej rozwijana. Polecam pobrać alternatywę - [Etna](https://github.com/pengwius/freewulkanowy/releases/download/etna-0.0.0-beta%2B20260902/app-release.apk)
 
 **Nie jestem twórcą aplikacji** , jednak wszelką komunikację można kierować do mnie.
 
