@@ -23,6 +23,7 @@ import io.github.freewulkanowy.utils.uniqueSubtract
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.sync.Mutex
+import timber.log.Timber
 import java.time.Instant
 import java.time.LocalDate
 import javax.inject.Inject
@@ -83,6 +84,7 @@ class TimetableRepository @Inject constructor(
             timetableFull.mapToEntities(semester)
         },
         saveFetchResult = { timetableOld, timetableNew ->
+            Timber.i("New timetable: %s", timetableNew.toString())
             refreshTimetable(student, timetableOld.lessons, timetableNew.lessons, notify)
             refreshAdditional(timetableOld.additional, timetableNew.additional)
             refreshDayHeaders(timetableOld.headers, timetableNew.headers)
